@@ -1,8 +1,7 @@
 import requests
 
 def fetch_todos():
-    url = "https://jsonplaceholder.typicode.com/todos"
-    response = requests.get(url)
+    response = requests.get("https://jsonplaceholder.typicode.com/todos")
     
     if response.status_code == 200:
         todos = response.json()

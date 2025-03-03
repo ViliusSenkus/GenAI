@@ -18,10 +18,9 @@ def chat_with_gpt(prompt, api_key):
         result = response.json()
         print("ChatGPT:", result["choices"][0]["message"]["content"].strip())
     else:
-        print("Failed to fetch response. Status code:", response.status_code)
+        print("Failed to fetch response. Status code:", response.status_code, response.reason)
 
 if __name__ == "__main__":
-    fetch_todos()
-    api_key = "YOUR_OPENAI_API_KEY"  # Čia įrašyk savo OpenAI API raktą
-    prompt = "Labas, kaip sekasi?"
+    api_key = "223215651654873548987"
+    prompt = "What is the best phrase of Churchill?"
     chat_with_gpt(prompt, api_key)
