@@ -12,4 +12,13 @@ def fetch_todos():
 
 if __name__ == "__main__":
     fetch_todos()
-  
+
+
+### .env laikomu kintamuju pajamimas
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+api_key= os.getenv('OPENAI_KEY')
+print(api_key)
