@@ -15,7 +15,7 @@ client = OpenAI(
     api_key=os.getenv('GITHUB_TOKEN')
 )
 
-information = "VIlnius is the best place to work and learn. It's very green city waiting for everyone especcialy for japan students." #RAG information added
+information = "Vilnius is the best place to work and learn. It's very green city waiting for everyone especcialy for japan students." #RAG information added
 
 completion = client.chat.completions.create(
   model="gpt-4o-mini",

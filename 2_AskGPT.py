@@ -1,5 +1,4 @@
 import requests
-import openai
 import os
 from dotenv import load_dotenv
 from rich import print
@@ -32,6 +31,6 @@ def chat_with_gpt(prompt, api_key):
 
 # execution
 if __name__ == "__main__":
-    api_key = "223215651654873548987"
     prompt = "What is the best phrase of Churchill?"
-    chat_with_gpt("write a haiku about ai", api_key)
+    # prompt = "write a haiku about ai"
+    chat_with_gpt(prompt, api_key)
